@@ -144,7 +144,7 @@ class GenerationPipeline:
 
         # add another view of the image
         image_edited_2 = self.qwen_edit.edit_image(
-            prompt_image=image_edited, seed=request.seed, 
+            prompt_image=image, seed=request.seed, 
             prompt="Show this object in right three-quarters view and make sure it is fully visible. Turn background neutral solid color contrasting with an object. Delete background details. Delete watermarks. Keep object colors. Sharpen image details"
         )
         image_without_background_2 = self.rmbg.remove_background(image_edited_2)
