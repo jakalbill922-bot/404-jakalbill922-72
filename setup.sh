@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e  # Exit on error
+apt update && apt install sudo -y
 
 # Colors for output
 RED='\033[0;31m'
