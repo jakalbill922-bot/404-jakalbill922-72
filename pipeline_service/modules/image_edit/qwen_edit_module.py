@@ -155,7 +155,7 @@ class QwenEditModule(QwenManager):
 
             prompting = self.prompting.model_dump()
             if prompt:
-                prompting["positive"] = prompt
+                prompting["prompt"] = prompt
             
             # Run the edit pipe
             result = self._run_edit_pipe(prompt_image=prompt_image,
